@@ -1,22 +1,37 @@
 import 'dotenv/config';
+
 export default {
   expo: {
-    name: 'Orçamentos Marcenaria',
-    slug: 'marcenaria-orcamentos',
-    scheme: 'orcamentos',
+    name: 'Studio Planejar',
+    slug: 'studio-planejar',
     version: '1.0.0',
     orientation: 'portrait',
-    updates: { fallbackToCacheTimeout: 0 },
+    icon: './assets/icon.png',
+    scheme: 'studio-planejar',
+    userInterfaceStyle: 'light',
+    splash: {
+      image: './assets/splash.png',
+      resizeMode: 'contain',
+      backgroundColor: '#ffffff',
+    },
     assetBundlePatterns: ['**/*'],
-    ios: { supportsTablet: true, bundleIdentifier: 'com.studioplanejar.orcamentos' },
-    android: { package: 'com.studioplanejar.orcamentos' },
+    ios: { supportsTablet: true },
+    android: {
+      adaptiveIcon: {
+        foregroundImage: './assets/adaptive-icon.png',
+        backgroundColor: '#ffffff',
+      },
+      package: 'com.studioplanejar.app',
+      versionCode: 1,
+    },
+    web: { favicon: './assets/favicon.png' },
     plugins: [
-      ['expo-build-properties', { ios: { useFrameworks: 'static' } }]
+      ['expo-build-properties', { ios: { useFrameworks: 'static' } }],
     ],
     extra: {
-      eas: { projectId: 'REPLACE_WITH_EAS_PROJECT_ID' },
-      supabaseUrl: process.env.SUPABASE_URL,
-      supabaseAnonKey: process.env.SUPABASE_ANON_KEY
-    }
-  }
+      eas: {
+        projectId: 'ab3e1b5c-faeb-44d1-b084-c5e286755abe', // <- seu ID
+      },
+    },
+  },
 };
