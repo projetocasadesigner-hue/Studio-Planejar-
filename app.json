@@ -1,3 +1,4 @@
+
 {
   "expo": {
     "name": "Studio Planejar",
@@ -13,9 +14,7 @@
       "backgroundColor": "#ffffff"
     },
     "assetBundlePatterns": ["**/*"],
-    "ios": {
-      "supportsTablet": true
-    },
+    "ios": { "supportsTablet": true },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
@@ -24,25 +23,16 @@
       "package": "com.studioplanejar.app",
       "versionCode": 1
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    },
+    "web": { "favicon": "./assets/favicon.png" },
     "plugins": [
       [
         "expo-build-properties",
-        {
-          "ios": {
-            "useFrameworks": "static"
-          }
-        }
+        { "ios": { "useFrameworks": "static" } }
       ]
     ],
-   "extra": {
-  "eas": {
-    "projectId": "ab3e1b5c-faeb-44d1-b084-c5e286755abe"
-  }
-}
-
+    "extra": {
+      "eas": {
+        "projectId": "ab3e1b5c-faeb-44d1-b084-c5e286755abe"
       }
     }
   }
