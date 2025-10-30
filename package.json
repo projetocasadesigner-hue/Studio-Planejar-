@@ -2,6 +2,7 @@
   "name": "marcenaria-orcamentos-expo",
   "version": "1.0.0",
   "main": "expo-router/entry",
+  "private": true,
   "scripts": {
     "start": "expo start",
     "android": "expo run:android",
@@ -31,9 +32,9 @@
   },
   "devDependencies": {
     "@babel/core": "^7.25.2"
-  },
-  "private": true
+  }
 }
+
 
 
 
