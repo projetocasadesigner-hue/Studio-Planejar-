@@ -33,7 +33,7 @@
   "devDependencies": {
     "@babel/core": "^7.25.2"
   },
-  "packageManager": "npm@10.8.2"
+"packageManager": "yarn@npm@10.8.2"
 }
 
 
